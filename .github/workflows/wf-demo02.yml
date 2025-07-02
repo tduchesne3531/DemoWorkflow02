@@ -1,0 +1,13 @@
+name: Workflow local
+on: [push, workflow_dispatch]
+jobs:
+    buildJob:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Simulation d'éxécution du build
+              run: echo "Build en cours"
+    testJob:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Simulation d'éxécution du build
+              run: echo "Test en cours"
